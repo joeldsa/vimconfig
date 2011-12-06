@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/jdsa/dev/acm/lib'
+let g:netrw_dirhist_2='/home/jdsa/dev/acm/cov'
+let g:netrw_dirhist_3='/home/jdsa/dev/collab_spaces/vcap'
+let g:netrw_dirhist_4='/home/jdsa/dev/uaa'
+let g:netrw_dirhist_5='/home/jdsa/dev/vcap/dev_setup/cookbooks'
+let g:netrw_dirhist_6='/home/jdsa/dev/vcap'
+let g:netrw_dirhist_7='/home/jdsa/dev/vcap/dev_setup/cookbooks'
+let g:netrw_dirhist_8='/home/jdsa/dev/vcap/dev_setup/bin'
