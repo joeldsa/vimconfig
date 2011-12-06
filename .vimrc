@@ -40,9 +40,9 @@ filetype indent on
 
 "keymapping
 " map <C-n> :FufFile **/<CR>
-:let project_folder = system("PROJECT=`git rev-parse --show-toplevel 2>/dev/null`; if [ -z $PROJECT ]; then PROJECT=~/; fi; echo $PROJECT")
-:let command='map <C-n> :FufFile ' . project_folder 
-:execute command 
+:let project_folder = system("PROJECT=`git rev-parse --show-toplevel 2>/dev/null`; if [ -z $PROJECT ]; then PROJECT=~/; fi; echo -n $PROJECT")
+:let command='map <C-n> :FufFile ' . project_folder  . "<CR>"
+:execute command
 map <C-S-r> :MRU<CR>
 map <C-Tab> <C-w>w
 map <C-Esc> <C-w>c
