@@ -43,9 +43,20 @@ filetype indent on
 :let project_folder = system("PROJECT=`git rev-parse --show-toplevel 2>/dev/null`; if [ -z $PROJECT ]; then PROJECT=~/; fi; echo -n $PROJECT")
 :let command='map <C-n> :FufFile ' . project_folder  . "<CR>"
 :execute command
-map <C-S-r> :MRU<CR>
-map <C-Tab> <C-w>w
-map <C-Esc> <C-w>c
+nmap <C-R> :MRU<CR>
+nmap <C-Tab> <C-w>w
+nmap <C-q> <C-w>c
+"nmap <C-Tab> :tabn<CR>
+"nmap <C-S-Tab> :tabp<CR>
+"nmap <C-t> :tabnew<CR>
+map <C-Q>   :q!<CR>
+map <C-s>   :w<CR>
+"map <C-S-f> :Ack! 
+map <C-p>   :!pwd<CR>
+map <F8>    :TlistOpen<CR>
+map <C-F5>  :TlistUpdate<CR>
+map <Leader>c "+y
+map <Leader>v "+p
 
 "search
 set incsearch
